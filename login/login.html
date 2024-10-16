@@ -90,18 +90,18 @@
      <div class="contenedor">
         <h2 style="text-align: center; color: white; ">AUTENTICARSE</h2>
     <div class="tarjeta">
-        <form action="">
+        <form id="autenticador">
             <br>
-            <label for="">Usuario</label>
-            <input type="text" placeholder="  aqui ingrese su nombre de usuario   " style="width: 95%; height: 20px;">
-            <br>
-            <br>
-            <label for="">Contraseña</label>
-            <input type="password" placeholder="  ingrese su contraseña" style="width: 95%; height: 20px;">
+            <label for="usuario">Usuario</label>
+            <input type="text" id="usuario" placeholder="  aqui ingrese su nombre de usuario   " style="width: 95%; height: 20px;">
             <br>
             <br>
-            <button type="submit" style="width: 95.5%;" class="ingreso"> Ingresar</button>
-            <div class="enlaces">
+            <label for="contrasena">Contraseña</label>
+            <input type="password" id="contrasena" placeholder="  ingrese su contraseña" style="width: 95%; height: 20px;">
+            <br>
+            <br>
+            <button type="submit" style="width: 95.5%;" class="ingreso" id="enviar"> Ingresar</button>
+            <div class="enlaces" style="display: flex; justify-content: center;">
                 <a href="registro.html">registrarse</a>
                |
                 <a href="">recuperar contraseña?</a>
