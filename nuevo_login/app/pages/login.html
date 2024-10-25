@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registro de usuario</title>
+    <script src="login.js" defer></script>
+</head>
+<style>
+    body{
+        margin: 0;
+        background-color: #1a352c ;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; 
+        background-image: url('img/vecteezy_beautiful-green-leaf_17220425.svg' );
+        background-size: 80vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        
+        
+        
+    }
+    .contenedor{
+    
+    margin: 5px;
+    padding: 5px;
+    position: relative;
+    align-items: center;
+    
+    }
+    a{
+        text-decoration: none;
+        color: #0e1613 ;
+        text-align: center;
+        margin: 8px;
+    }
+    .tarjeta{
+        border-radius: 20px;
+        
+        background-color: #81a4978e;
+        overflow: hidden;
+        
+    }
+    form {
+        width: 400px;
+        height: 200px;
+        display: block;
+        margin: 9px;
+        border-radius: 10px;
+        outline: none;
+        border:none;
+
+    }
+
+    .ingreso {
+            height: 20px;
+            font-size: 16px;
+            color: white;
+            background-color:#152520;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+        .boton:active {
+            transform: scale(0.95);
+        }
+        input{
+            border-radius: 10px;
+            padding: 5px;
+            border: none;
+            outline: none;
+            background-color: #81a497;
+        }
+        label{
+            color: #0e1613;
+        }
+        .enlaces{
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        h2 {
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5)
+        }
+        .error{
+  color: rgb(196, 29, 29);
+}
+
+.escondido{
+  display: none;
+}
+</style>
+<body>
+     <div class="contenedor">
+        <h2 style="text-align: center; color: white; ">AUTENTICARSE</h2>
+    <div class="tarjeta">
+        <form id="autenticador">
+            <br>
+            <label for="password">Usuario</label>
+            <input type="text" id="user" name="user" placeholder="  aqui ingrese su nombre de usuario   " style="width: 95%; height: 20px;">
+            <br>
+            <br>
+            <label for="password">Contraseña</label>
+            <input type="password" name="password" id="password" placeholder="  ingrese su contraseña" style="width: 95%; height: 20px;">
+            <br>
+            <br>
+            <button type="submit" style="width: 95.5%;" class="ingreso" id="enviar"> Ingresar</button>
+            <div class="enlaces" style="display: flex; justify-content: center;">
+                <a href="/register">registrarse</a>
+               |
+               <p class="error escondido">Error al iniciar sesión</p>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
+
+
+

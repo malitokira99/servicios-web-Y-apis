@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registro de usuario</title>
+    <script src="register.js" defer></script>
+</head>
+<style>
+    body{
+        margin: 0;
+        background-color: #1a352c ;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; 
+        background-image: url('img/18493603_5994425.svg' );
+        background-size: 150vh;
+        background-repeat: no-repeat;
+        background-position:center;
+        
+        
+        
+    }
+    .contenedor{
+    
+    margin: 5px;
+    padding: 5px;
+    position: relative;
+    align-items: center;
+    
+    }
+    a{
+        text-decoration: none;
+        color: #0e1613 ;
+        text-align: center;
+        margin: 8px;
+    }
+    .tarjeta{
+        border-radius: 20px;
+        
+        background-color: #81a497da;
+        overflow: hidden;
+        
+    }
+    form {
+        width: 400px;
+        height: 350px;
+        display: block;
+        margin: 9px;
+        border-radius: 10px;
+        outline: none;
+        border:none;
+
+    }
+
+    .ingreso {
+            height: 20px;
+            font-size: 16px;
+            color: white;
+            background-color:#152520;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+        .boton:active {
+            transform: scale(0.95);
+        }
+        input{
+            border-radius: 10px;
+            padding: 5px;
+            border: none;
+            outline: none;
+            background-color: #cfdbd7;
+        }
+        label{
+            color: #0e1613;
+        }
+        .enlaces{
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        h2 {
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5)
+        }
+       
+        .elaceL{
+            text-align: center;
+            
+        }
+</style>
+<body>
+     <div class="contenedor">
+        <h2 style="text-align: center; color: white; ">REGISTRARSE</h2>
+    <div class="tarjeta">
+        <form action="" id="crearUso">
+            <br>
+            <label for="">registre su email</label>
+            <input type="email" id="email" placeholder="  cree una contraseña" style="width: 95%; height: 20px;">
+            <br>
+            <br>
+            <label for=""> nombre de usuario</label>
+            <input type="text" id="user" placeholder="  aqui registre su nombre  " style="width: 95%; height: 20px;">
+            <br>
+            <br>
+            <label for="">Contraseña</label>
+            <input type="password" id="password" placeholder="  cree una contraseña" style="width: 95%; height: 20px;">
+            <br>
+            <br>
+            
+            <br>
+            <button type="submit" style="width: 95.5%;" class="ingreso"> GUARDAR</button>
+            <div style="display: flex; justify-content: center;">
+            <a href="/" class="enlaceL" >login</a>
+             </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
+
+
+
